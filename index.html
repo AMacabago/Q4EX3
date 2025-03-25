@@ -37,16 +37,16 @@
     <script type="text/javascript">
         function enter() {
             var grade = document.getElementById('inputGrade').value * 1;
-            if (grade >= 1) {
+            if (grade < 6) {
                 window.alert("Needs Improvement");
             }
-            else if (grade >= 6){
+            else if (grade < 9){
                 window.alert("Standard");
             }
-            else if (grade >= 9) {
+            else if (grade < 13) {
                 window.alert("Above Standard");
             }
-            else (grade >= 13) {
+            else {
                 window.alert("Excellent");
             }
         }
